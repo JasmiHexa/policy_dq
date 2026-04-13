@@ -1,0 +1,21 @@
+name,age,email,customer_id,start_date,end_date,phone,status
+John Doe,25,john@example.com,CUST001,2024-01-01,2024-12-31,555-0101,active
+Jane Smith,30,jane@example.com,CUST002,2024-02-01,2024-11-30,555-0102,active
+Bob Johnson,45,bob.johnson@company.com,CUST003,2024-03-01,2024-10-31,555-0103,inactive
+Alice Brown,28,alice@test.com,CUST004,2024-04-01,2024-09-30,555-0104,active
+Charlie Wilson,35,charlie.wilson@email.com,CUST005,2024-05-01,2024-08-31,555-0105,active
+,22,missing.name@test.com,CUST006,2024-06-01,2024-07-31,555-0106,active
+David Lee,invalid_age,david@example.com,CUST007,2024-07-01,2024-06-30,555-0107,active
+Sarah Connor,45,invalid-email-format,CUST008,2024-08-01,2024-12-31,555-0108,active
+Mike Ross,17,mike@underage.com,CUST009,2024-09-01,2024-11-30,555-0109,active
+Emma Watson,105,emma@toolold.com,CUST010,2024-10-01,2024-12-31,555-0110,active
+Tom Hardy,35,tom@duplicate.com,CUST001,2024-11-01,2024-12-31,555-0111,active
+Lisa Park,28,,CUST011,2024-12-01,2024-12-31,555-0112,active
+James Bond,40,james@spy.com,CUST012,2025-01-01,2024-12-31,invalid-phone,active
+Anna Smith,32,anna@test.com,CUST013,2024-01-15,2024-01-10,555-0113,active
+Peter Parker,25,peter@spider.com,CUST014,2024-02-01,2024-11-30,,pending
+Bruce Wayne,45,bruce@wayne.com,,2024-03-01,2024-10-31,555-0115,active
+Clark Kent,30,clark@daily.com,CUST016,invalid-date,2024-12-31,555-0116,active
+Diana Prince,28,diana@amazon.com,CUST017,2024-04-01,invalid-date,555-0117,active
+Tony Stark,50,tony@stark.com,CUST018,2024-05-01,2024-08-31,555-0118,unknown_status
+Natasha Romanoff,35,natasha@shield.com,CUST019,2024-06-01,2024-07-31,555-0119,active

@@ -1,0 +1,24 @@
+{
+  "rule_source": {
+    "source": "customer_data",
+    "source_type": "mcp",
+    "fallback_sources": [
+      {
+        "source": "sample_rules/customer_validation.yaml",
+        "type": "file"
+      }
+    ],
+    "mcp_config": {
+      "command": "python",
+      "args": ["mcp_validation_server.py"],
+      "timeout": 10
+    }
+  },
+  "output": {
+    "output_directory": "reports",
+    "generate_console_report": true,
+    "generate_json_report": true,
+    "generate_markdown_report": true
+  },
+  "severity_threshold": "error"
+}

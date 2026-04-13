@@ -1,0 +1,45 @@
+{
+  "name": "Code Quality Lint Check",
+  "description": "Run linting and formatting checks on Python files to maintain code quality standards",
+  "trigger": {
+    "type": "file_saved",
+    "conditions": {
+      "file_extensions": [".py"],
+      "exclude_patterns": ["__pycache__/**", "*.pyc", ".pytest_cache/**"]
+    }
+  },
+  "actions": [
+    {
+      "type": "command",
+      "command": "python -m ruff check src/ tests/ --fix",
+      "working_directory": ".",
+      "timeout": 60,
+      "on_failure": {
+        "message": "Ruff linting found issues. Some were auto-fixed, please review changes.",
+        "severity": "warning"
+      }
+    },
+    {
+      "type": "command",
+      "command": "python -m black src/ tests/ --check",
+      "working_directory": ".",
+      "timeout": 60,
+      "on_failure": {
+        "message": "Code formatting issues found. Run 'python -m black src/ tests/' to fix formatting.",
+        "severity": "error"
+      }
+    },
+    {
+      "type": "command",
+      "command": "python -m mypy src/policy_dq --strict",
+      "working_directory": ".",
+      "timeout": 120,
+      "on_failure": {
+        "message": "Type checking failed. Please fix type annotations and type errors.",
+        "severity": "error"
+      }
+    }
+  ],
+  "enabled": true,
+  "auto_approve": true
+}

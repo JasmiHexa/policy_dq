@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "description": "Kiro hooks configuration for Policy Data Quality project",
+  "global_settings": {
+    "timeout_default": 300,
+    "retry_attempts": 1,
+    "log_level": "info"
+  },
+  "hook_groups": {
+    "quality_automation": {
+      "description": "Automated quality checks and enforcement",
+      "hooks": [
+        "test-after-task",
+        "lint-check",
+        "documentation-check"
+      ],
+      "enabled": true
+    },
+    "security": {
+      "description": "Security and safety enforcement",
+      "hooks": [
+        "security-check"
+      ],
+      "enabled": true
+    },
+    "development_assistance": {
+      "description": "Development workflow assistance",
+      "hooks": [
+        "test-coverage-reminder"
+      ],
+      "enabled": true
+    }
+  },
+  "environments": {
+    "development": {
+      "all_hooks_enabled": true,
+      "auto_approve_safe_hooks": true
+    },
+    "ci": {
+      "all_hooks_enabled": true,
+      "auto_approve_safe_hooks": true,
+      "fail_on_hook_failure": true
+    },
+    "production": {
+      "security_hooks_only": true,
+      "auto_approve_safe_hooks": false
+    }
+  }
+}

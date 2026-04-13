@@ -1,0 +1,94 @@
+{
+  "version": "1.0",
+  "rule_sets": [
+    {
+      "name": "customer_validation",
+      "description": "Comprehensive customer data validation rules",
+      "rules": [
+        {
+          "name": "customer_id_required",
+          "type": "required_field",
+          "field": "customer_id",
+          "severity": "critical",
+          "description": "Customer ID is mandatory"
+        },
+        {
+          "name": "customer_id_unique",
+          "type": "uniqueness",
+          "field": "customer_id",
+          "severity": "critical",
+          "description": "Customer ID must be unique"
+        },
+        {
+          "name": "first_name_required",
+          "type": "required_field",
+          "field": "first_name",
+          "severity": "error",
+          "description": "First name is required"
+        },
+        {
+          "name": "last_name_required",
+          "type": "required_field",
+          "field": "last_name",
+          "severity": "error",
+          "description": "Last name is required"
+        },
+        {
+          "name": "email_required",
+          "type": "required_field",
+          "field": "email",
+          "severity": "error",
+          "description": "Email address is required"
+        },
+        {
+          "name": "email_format_check",
+          "type": "regex_check",
+          "field": "email",
+          "parameters": {
+            "pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+          },
+          "severity": "error",
+          "description": "Email must be in valid format"
+        },
+        {
+          "name": "email_unique",
+          "type": "uniqueness",
+          "field": "email",
+          "severity": "warning",
+          "description": "Email addresses should be unique"
+        },
+        {
+          "name": "phone_format",
+          "type": "regex_check",
+          "field": "phone",
+          "parameters": {
+            "pattern": "^\\+?[1-9]\\d{1,14}$"
+          },
+          "severity": "warning",
+          "description": "Phone number should be in international format"
+        },
+        {
+          "name": "age_range_check",
+          "type": "numeric_range",
+          "field": "age",
+          "parameters": {
+            "min": 18,
+            "max": 99
+          },
+          "severity": "warning",
+          "description": "Age should be between 18 and 99 for adult customers"
+        },
+        {
+          "name": "registration_date_type",
+          "type": "type_check",
+          "field": "registration_date",
+          "parameters": {
+            "expected_type": "date"
+          },
+          "severity": "error",
+          "description": "Registration date must be a valid date"
+        }
+      ]
+    }
+  ]
+}

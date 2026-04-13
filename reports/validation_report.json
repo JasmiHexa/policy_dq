@@ -1,0 +1,1700 @@
+{
+  "metadata": {
+    "generator": "policy-dq-validator",
+    "input_file": "sample_data/customers_with_issues.csv",
+    "report_version": "1.0",
+    "rules_source": "customer_data",
+    "timestamp": "2024-04-13T10:01:53.622664+00:00",
+    "timestamp_local": "2024-04-13T15:31:53.622667"
+  },
+  "results": [
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 0,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 1,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 2,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 3,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 4,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 5,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 6,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 7,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 8,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 9,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 10,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 11,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 12,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 13,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 14,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Required field 'customer_id' is empty",
+      "passed": false,
+      "row_index": 15,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 16,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 17,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 18,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' validation passed",
+      "passed": true,
+      "row_index": 19,
+      "rule_name": "customer_id_required",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST001' is not unique (duplicate found)",
+      "passed": false,
+      "row_index": 0,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST002' is unique",
+      "passed": true,
+      "row_index": 1,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST003' is unique",
+      "passed": true,
+      "row_index": 2,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST004' is unique",
+      "passed": true,
+      "row_index": 3,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST005' is unique",
+      "passed": true,
+      "row_index": 4,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST006' is unique",
+      "passed": true,
+      "row_index": 5,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST007' is unique",
+      "passed": true,
+      "row_index": 6,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST008' is unique",
+      "passed": true,
+      "row_index": 7,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST009' is unique",
+      "passed": true,
+      "row_index": 8,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST010' is unique",
+      "passed": true,
+      "row_index": 9,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST001' is not unique (duplicate found)",
+      "passed": false,
+      "row_index": 10,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST011' is unique",
+      "passed": true,
+      "row_index": 11,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST012' is unique",
+      "passed": true,
+      "row_index": 12,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST013' is unique",
+      "passed": true,
+      "row_index": 13,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST014' is unique",
+      "passed": true,
+      "row_index": 14,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value '' is unique",
+      "passed": true,
+      "row_index": 15,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST016' is unique",
+      "passed": true,
+      "row_index": 16,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST017' is unique",
+      "passed": true,
+      "row_index": 17,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST018' is unique",
+      "passed": true,
+      "row_index": 18,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "customer_id",
+      "message": "Field 'customer_id' value 'CUST019' is unique",
+      "passed": true,
+      "row_index": 19,
+      "rule_name": "customer_id_unique",
+      "severity": "critical"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 0,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 1,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 2,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 3,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 4,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 5,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 6,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 7,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 8,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 9,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 10,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 11,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 12,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 13,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 14,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 15,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 16,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 17,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 18,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "first_name",
+      "message": "Required field 'first_name' is missing",
+      "passed": false,
+      "row_index": 19,
+      "rule_name": "first_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 0,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 1,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 2,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 3,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 4,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 5,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 6,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 7,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 8,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 9,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 10,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 11,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 12,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 13,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 14,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 15,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 16,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 17,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 18,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "last_name",
+      "message": "Required field 'last_name' is missing",
+      "passed": false,
+      "row_index": 19,
+      "rule_name": "last_name_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 0,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 1,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 2,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 3,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 4,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 5,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 6,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 7,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 8,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 9,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 10,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Required field 'email' is empty",
+      "passed": false,
+      "row_index": 11,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 12,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 13,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 14,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 15,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 16,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 17,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 18,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' validation passed",
+      "passed": true,
+      "row_index": 19,
+      "rule_name": "email_required",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 0,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 1,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 2,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 3,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 4,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 5,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 6,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'invalid-email-format' does not match pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": false,
+      "row_index": 7,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 8,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 9,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 10,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value '' does not match pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": false,
+      "row_index": 11,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 12,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 13,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 14,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 15,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 16,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 17,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 18,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' matches pattern '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'",
+      "passed": true,
+      "row_index": 19,
+      "rule_name": "email_format_check",
+      "severity": "error"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'john@example.com' is unique",
+      "passed": true,
+      "row_index": 0,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'jane@example.com' is unique",
+      "passed": true,
+      "row_index": 1,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'bob.johnson@company.com' is unique",
+      "passed": true,
+      "row_index": 2,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'alice@test.com' is unique",
+      "passed": true,
+      "row_index": 3,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'charlie.wilson@email.com' is unique",
+      "passed": true,
+      "row_index": 4,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'missing.name@test.com' is unique",
+      "passed": true,
+      "row_index": 5,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'david@example.com' is unique",
+      "passed": true,
+      "row_index": 6,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'invalid-email-format' is unique",
+      "passed": true,
+      "row_index": 7,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'mike@underage.com' is unique",
+      "passed": true,
+      "row_index": 8,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'emma@toolold.com' is unique",
+      "passed": true,
+      "row_index": 9,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'tom@duplicate.com' is unique",
+      "passed": true,
+      "row_index": 10,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value '' is unique",
+      "passed": true,
+      "row_index": 11,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'james@spy.com' is unique",
+      "passed": true,
+      "row_index": 12,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'anna@test.com' is unique",
+      "passed": true,
+      "row_index": 13,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'peter@spider.com' is unique",
+      "passed": true,
+      "row_index": 14,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'bruce@wayne.com' is unique",
+      "passed": true,
+      "row_index": 15,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'clark@daily.com' is unique",
+      "passed": true,
+      "row_index": 16,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'diana@amazon.com' is unique",
+      "passed": true,
+      "row_index": 17,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'tony@stark.com' is unique",
+      "passed": true,
+      "row_index": 18,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "email",
+      "message": "Field 'email' value 'natasha@shield.com' is unique",
+      "passed": true,
+      "row_index": 19,
+      "rule_name": "email_unique",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0101' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 0,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0102' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 1,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0103' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 2,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0104' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 3,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0105' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 4,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0106' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 5,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0107' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 6,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0108' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 7,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0109' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 8,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0110' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 9,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0111' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 10,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0112' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 11,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value 'invalid-phone' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 12,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0113' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 13,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 14,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0115' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 15,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0116' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 16,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0117' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 17,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0118' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 18,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "phone",
+      "message": "Field 'phone' value '555-0119' does not match pattern '^\\+?[1-9]\\d{1,14}$'",
+      "passed": false,
+      "row_index": 19,
+      "rule_name": "phone_format",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 25 is within range [18, 99]",
+      "passed": true,
+      "row_index": 0,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 30 is within range [18, 99]",
+      "passed": true,
+      "row_index": 1,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 45 is within range [18, 99]",
+      "passed": true,
+      "row_index": 2,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 28 is within range [18, 99]",
+      "passed": true,
+      "row_index": 3,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 35 is within range [18, 99]",
+      "passed": true,
+      "row_index": 4,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 22 is within range [18, 99]",
+      "passed": true,
+      "row_index": 5,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 'invalid_age' cannot be converted to number: Cannot convert 'invalid_age' to number",
+      "passed": false,
+      "row_index": 6,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 45 is within range [18, 99]",
+      "passed": true,
+      "row_index": 7,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' numeric range validation failed: value 17 is less than minimum 18",
+      "passed": false,
+      "row_index": 8,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' numeric range validation failed: value 105 is greater than maximum 99",
+      "passed": false,
+      "row_index": 9,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 35 is within range [18, 99]",
+      "passed": true,
+      "row_index": 10,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 28 is within range [18, 99]",
+      "passed": true,
+      "row_index": 11,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 40 is within range [18, 99]",
+      "passed": true,
+      "row_index": 12,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 32 is within range [18, 99]",
+      "passed": true,
+      "row_index": 13,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 25 is within range [18, 99]",
+      "passed": true,
+      "row_index": 14,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 45 is within range [18, 99]",
+      "passed": true,
+      "row_index": 15,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 30 is within range [18, 99]",
+      "passed": true,
+      "row_index": 16,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 28 is within range [18, 99]",
+      "passed": true,
+      "row_index": 17,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 50 is within range [18, 99]",
+      "passed": true,
+      "row_index": 18,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "age",
+      "message": "Field 'age' value 35 is within range [18, 99]",
+      "passed": true,
+      "row_index": 19,
+      "rule_name": "age_range_check",
+      "severity": "warning"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 0,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 1,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 2,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 3,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 4,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 5,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 6,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 7,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 8,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 9,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 10,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 11,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 12,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 13,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 14,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 15,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 16,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 17,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 18,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    },
+    {
+      "field": "registration_date",
+      "message": "Field 'registration_date' is missing for type check",
+      "passed": false,
+      "row_index": 19,
+      "rule_name": "registration_date_type",
+      "severity": "error"
+    }
+  ],
+  "statistics": {
+    "failures_by_field": {
+      "age": 3,
+      "customer_id": 3,
+      "email": 3,
+      "first_name": 20,
+      "last_name": 20,
+      "phone": 20,
+      "registration_date": 20
+    },
+    "failures_by_rule": {
+      "age_range_check": 3,
+      "customer_id_required": 1,
+      "customer_id_unique": 2,
+      "email_format_check": 2,
+      "email_required": 1,
+      "first_name_required": 20,
+      "last_name_required": 20,
+      "phone_format": 20,
+      "registration_date_type": 20
+    },
+    "failures_by_severity": {
+      "critical": 3,
+      "error": 63,
+      "warning": 23
+    },
+    "most_common_failures": [
+      {
+        "affected_fields": [
+          "first_name"
+        ],
+        "count": 20,
+        "message": "Required field 'first_name' is missing",
+        "rule_name": "first_name_required",
+        "severity": "error"
+      },
+      {
+        "affected_fields": [
+          "last_name"
+        ],
+        "count": 20,
+        "message": "Required field 'last_name' is missing",
+        "rule_name": "last_name_required",
+        "severity": "error"
+      },
+      {
+        "affected_fields": [
+          "registration_date"
+        ],
+        "count": 20,
+        "message": "Field 'registration_date' is missing for type check",
+        "rule_name": "registration_date_type",
+        "severity": "error"
+      },
+      {
+        "affected_fields": [
+          "customer_id"
+        ],
+        "count": 2,
+        "message": "Field 'customer_id' value 'CUST001' is not unique (duplicate found)",
+        "rule_name": "customer_id_unique",
+        "severity": "critical"
+      },
+      {
+        "affected_fields": [
+          "customer_id"
+        ],
+        "count": 1,
+        "message": "Required field 'customer_id' is empty",
+        "rule_name": "customer_id_required",
+        "severity": "critical"
+      }
+    ]
+  },
+  "summary": {
+    "failed_validations": 89,
+    "passed_validations": 111,
+    "severity_breakdown": {
+      "critical": 40,
+      "error": 100,
+      "info": 0,
+      "warning": 60
+    },
+    "success_rate": 55.5,
+    "total_records": 20,
+    "total_rules": 10,
+    "total_validations": 200
+  }
+}

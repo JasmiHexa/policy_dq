@@ -1,0 +1,42 @@
+{
+  "name": "Documentation Quality Check",
+  "description": "Ensure public functions and classes have proper docstrings and documentation",
+  "trigger": {
+    "type": "file_saved",
+    "conditions": {
+      "file_extensions": [".py"],
+      "file_patterns": ["src/**/*.py"],
+      "exclude_patterns": ["__init__.py", "test_*.py"]
+    }
+  },
+  "actions": [
+    {
+      "type": "command",
+      "command": "python -c \"import ast; import sys; import re; content = open('${TRIGGER_FILE}').read(); tree = ast.parse(content); missing = []; for node in ast.walk(tree): \n  if isinstance(node, (ast.FunctionDef, ast.ClassDef)) and not node.name.startswith('_'): \n    if not ast.get_docstring(node): missing.append(f'{type(node).__name__} {node.name} at line {node.lineno}'); \nif missing: print('Missing docstrings:'); [print(f'  - {item}') for item in missing]; sys.exit(1)\"",
+      "working_directory": ".",
+      "timeout": 30,
+      "on_failure": {
+        "message": "Public functions or classes are missing docstrings. Please add comprehensive documentation.",
+        "severity": "warning",
+        "suggestions": [
+          "Add docstrings to all public functions and classes",
+          "Include parameter descriptions and return types",
+          "Provide usage examples for complex functions",
+          "Document exceptions that may be raised"
+        ]
+      }
+    },
+    {
+      "type": "command",
+      "command": "python -c \"import re; content = open('${TRIGGER_FILE}').read(); todos = re.findall(r'#\\s*TODO:?\\s*(.+)', content, re.IGNORECASE); fixmes = re.findall(r'#\\s*FIXME:?\\s*(.+)', content, re.IGNORECASE); if todos or fixmes: print('Code quality reminders found:'); [print(f'  TODO: {todo}') for todo in todos]; [print(f'  FIXME: {fixme}') for fixme in fixmes]\"",
+      "working_directory": ".",
+      "timeout": 30,
+      "on_success": {
+        "message": "Code quality reminders (TODO/FIXME) found. Consider addressing these before task completion.",
+        "severity": "info"
+      }
+    }
+  ],
+  "enabled": true,
+  "auto_approve": true
+}

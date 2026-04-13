@@ -1,0 +1,25 @@
+{
+  "name": "Security and Safety Check",
+  "description": "Block potentially dangerous shell commands and check for security issues in code changes",
+  "trigger": {
+    "type": "command_execution",
+    "conditions": {
+      "command_patterns": ["rm -rf", "sudo rm", "chmod 777", "curl *|*sh", "wget *|*sh", "> /dev/null", "dd if="]
+    }
+  },
+  "actions": [
+    {
+      "type": "block",
+      "message": "Potentially dangerous command detected. This command has been blocked for security reasons.",
+      "severity": "critical",
+      "suggestions": [
+        "Use specific file paths instead of wildcards with rm",
+        "Avoid piping downloads directly to shell",
+        "Use appropriate file permissions instead of 777",
+        "Consider safer alternatives for the operation"
+      ]
+    }
+  ],
+  "enabled": true,
+  "auto_approve": true
+}

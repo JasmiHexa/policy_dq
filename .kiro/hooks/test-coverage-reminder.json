@@ -1,0 +1,41 @@
+{
+  "name": "Test Coverage Reminder",
+  "description": "Remind to add tests when new Python modules are created or significant code is added without corresponding tests",
+  "trigger": {
+    "type": "file_created",
+    "conditions": {
+      "file_extensions": [".py"],
+      "exclude_patterns": ["test_*.py", "__init__.py", "conftest.py"]
+    }
+  },
+  "actions": [
+    {
+      "type": "check",
+      "condition": "corresponding_test_exists",
+      "check_command": "test -f tests/test_$(basename ${TRIGGER_FILE} .py).py || find tests/ -name '*test*$(basename ${TRIGGER_FILE} .py)*' | grep -q .",
+      "on_failure": {
+        "type": "reminder",
+        "message": "New Python module created without corresponding tests. Consider adding tests to maintain code quality.",
+        "severity": "info",
+        "suggestions": [
+          "Create tests/test_$(basename ${TRIGGER_FILE} .py).py",
+          "Add unit tests for public functions and classes",
+          "Include edge case and error condition tests",
+          "Ensure test coverage meets the 90% minimum requirement"
+        ]
+      }
+    },
+    {
+      "type": "command",
+      "command": "python -c \"import ast; import sys; tree = ast.parse(open('${TRIGGER_FILE}').read()); funcs = [n for n in ast.walk(tree) if isinstance(n, ast.FunctionDef) and not n.name.startswith('_')]; classes = [n for n in ast.walk(tree) if isinstance(n, ast.ClassDef)]; print(f'Found {len(funcs)} public functions and {len(classes)} classes'); sys.exit(1 if len(funcs) + len(classes) > 3 else 0)\"",
+      "working_directory": ".",
+      "timeout": 30,
+      "on_failure": {
+        "message": "Significant code added (>3 public functions/classes). Please ensure adequate test coverage.",
+        "severity": "warning"
+      }
+    }
+  ],
+  "enabled": true,
+  "auto_approve": false
+}

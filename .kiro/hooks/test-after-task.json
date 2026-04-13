@@ -1,0 +1,35 @@
+{
+  "name": "Run Tests After Task Completion",
+  "description": "Automatically run relevant tests after completing implementation tasks to ensure code quality",
+  "trigger": {
+    "type": "task_completed",
+    "conditions": {
+      "task_contains": ["implement", "create", "add", "fix", "update"],
+      "files_modified": ["src/**/*.py"]
+    }
+  },
+  "actions": [
+    {
+      "type": "command",
+      "command": "python -m pytest tests/ -v --tb=short",
+      "working_directory": ".",
+      "timeout": 300,
+      "on_failure": {
+        "message": "Tests failed after task completion. Please review and fix failing tests before proceeding.",
+        "severity": "error"
+      }
+    },
+    {
+      "type": "command", 
+      "command": "python -m pytest --cov=src/policy_dq --cov-report=term-missing --cov-fail-under=90",
+      "working_directory": ".",
+      "timeout": 300,
+      "on_failure": {
+        "message": "Code coverage is below 90%. Please add tests to improve coverage.",
+        "severity": "warning"
+      }
+    }
+  ],
+  "enabled": true,
+  "auto_approve": false
+}
