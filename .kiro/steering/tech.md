@@ -13,9 +13,11 @@ inclusion: always
 ## Package and Tooling Choices
 
 ### Dependency Management
-- **Poetry**: Primary dependency management and packaging tool
+- **pip + venv**: Standard Python dependency management with virtual environments
+- **requirements.txt**: Explicit dependency specification for reproducible builds
+- **setup.py**: Package configuration and entry points
 - **Requirements**: Keep dependencies minimal and well-justified
-- **Version Pinning**: Use semantic versioning constraints (^1.0.0) for flexibility
+- **Version Pinning**: Use >= constraints for flexibility while ensuring compatibility
 
 ### Core Dependencies
 - **Click**: CLI framework for user-friendly command-line interface
