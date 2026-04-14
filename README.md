@@ -17,7 +17,7 @@ A comprehensive Python-based data validation system that validates structured da
 ### Prerequisites
 
 - Python 3.11 or higher
-- pip or poetry for dependency management
+- pip for dependency management
 
 ### Install from Source
 
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-### Using Poetry (Recommended)
+### Alternative: Using Poetry
 
 ```bash
 # Install poetry if not already installed
@@ -342,7 +342,13 @@ The CLI uses standard exit codes for integration with CI/CD pipelines:
 
 1. Fork the repository
 2. Create a feature branch
-3. Install development dependencies: `poetry install`
+3. Set up virtual environment and install dependencies:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate.bat  # On Windows
+   pip install -r requirements.txt
+   pip install -e .
+   ```
 4. Run tests: `python -m pytest`
 5. Submit a pull request
 
